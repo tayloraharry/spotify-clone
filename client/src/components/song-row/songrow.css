@@ -1,0 +1,63 @@
+.songrow {
+  margin-left: 20px;
+  padding: 20px;
+  display: flex;
+  color: white;
+}
+
+.songrow:hover {
+  cursor: pointer;
+  background-color: black;
+  opacity: 0.8;
+}
+
+.songrow:hover > .songrow__misc > .songrow__misc_number {
+  display: none;
+}
+
+.songrow__misc_play {
+  display: none;
+}
+
+.songrow:hover > .songrow__misc > .songrow__misc_play {
+  display: contents
+}
+
+
+.songrow__misc {
+  color: gray;
+  justify-content: center;
+  align-items: center;
+  margin: 10;
+  flex: .025
+}
+
+.songrow__info {
+  margin-left: 20px;
+  flex: 0.5
+}
+
+.songrow__info > h1 {
+  font-size: 16px;
+}
+
+.songrow__info > p {
+  font-size: 14px;
+  margin-top: 3px;
+  color: gray;
+}
+
+.songrow__album {
+  height: 40px;
+  width: 40px;
+}
+
+.songrow__album_name {
+  flex: 0.45;
+  font-size: 12px;
+}
+
+.songrow__duration {
+  flex: 0.1;
+  font-size: 12px;
+}
